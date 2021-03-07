@@ -1,0 +1,268 @@
+/* Open Sans
+700 600 400
+ */
+/* Raleway
+ 700 */
+
+/* CSS-переменные */
+:root {
+  --white-text-color: #ffffff;
+  --accent-color: #ff6c00;
+  --title-text-color: #303030;
+  --primery-text-color: #555555;
+  --text-color-06: rgba(157, 164, 189, 0.6);
+  --text-table-color: #9da4bd;
+  --input-color-04: rgba(157, 164, 189, 0.4);
+  --background-dark-color: #191c26;
+  --background-color: #f7f7f7;
+  --background-color-02: rgba(25, 28, 38, 0.2);
+  --background: #111319;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+ul,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+}
+
+/* Header */
+.overlay-header {
+  height: 680px;
+  max-width: 1125px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      rgba(25, 28, 38, 0.2),
+      rgba(25, 28, 38, 0.2)
+    ),
+    url(../images/slider3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.nav {
+  color: var(--white-text-color);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.333; /*16px*/
+  letter-spacing: 0.1em;
+}
+.subtitle-overlay {
+  color: var(--text-color-06);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.363; /*15px*/
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.title-header {
+  margin-top: 20px;
+
+  color: var(--white-text-color);
+  font-family: 'Raleway' sans-serif;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18; /*85px*/
+  letter-spacing: 0.05em;
+}
+/* О нас */
+.about,
+.prices,
+.advantages,
+.masters,
+.portfolio {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+.subtitle {
+  color: var(--title-text-color);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.363; /*15px*/
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.about-box {
+  display: flex;
+  align-items: center;
+}
+.about-img {
+  display: flex;
+}
+.about-img > img + img {
+  margin-left: 30px;
+}
+.about-text {
+  margin-left: 64px;
+}
+.title {
+  margin-top: 20px;
+
+  color: var(--title-text-color);
+  font-family: 'Raleway' sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.167; /*49px*/
+  letter-spacing: 0.05em;
+}
+
+/* Услуги и цены */
+.overlay {
+  height: 718px;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      rgba(17, 19, 25, 0.8),
+      rgba(17, 19, 25, 0.8)
+    ),
+    url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.title-white {
+  margin-top: 20px;
+  color: var(--white-text-color);
+  font-family: 'Raleway' sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.167; /*49px*/
+  letter-spacing: 0.05em;
+}
+.table-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 44px;
+}
+.table-left,
+.table-right {
+  padding: 30px 40px;
+  color: var(--text-table-color);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.667; /*30px*/
+  letter-spacing: 0.02em;
+}
+.table-left {
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+.table-right {
+  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+/* Наши мастера */
+.masters {
+  background-color: var(--background-color);
+}
+.list-masters {
+  display: flex;
+}
+.list-masters > .item-masters + .item-masters {
+  margin-left: 30px;
+}
+.item-masters {
+  margin-top: 44px;
+  text-align: center;
+}
+.masters-name {
+  margin-top: 30px;
+
+  color: var(--title-text-color);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.389; /*25px*/
+  letter-spacing: 0.02em;
+}
+.masters-profession {
+  margin-top: 8px;
+
+  color: var(--accent-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.357; /*19px*/
+  letter-spacing: 0.02em;
+}
+
+.network-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.network-list > .item + .item {
+  margin-left: 10px;
+}
+.network-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--white-text-color);
+}
+.icon-network {
+  fill: var(--title-text-color);
+}
+.network-link:hover .icon-network,
+.network-link:focus .icon-network {
+  fill: var(--accent-color);
+}
+.network-link:hover,
+.network-link:focus {
+  outline: none;
+}
+/* Наши работы */
+.portfolio-list {
+  display: flex;
+  margin-top: 44px;
+}
+.portfolio-list > .item + .item {
+  margin-left: 30px;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--background-dark-color);
+}
+.title-contact {
+  color: var(--white-text-color);
+  font-family: 'Raleway' sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.167; /*49px*/
+  letter-spacing: 0.05em;
+}
+/* Скрытый заголовок */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
